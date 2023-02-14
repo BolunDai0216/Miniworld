@@ -314,12 +314,20 @@
 </div>
 <div class="toctree-wrapper compound">
 </div>
-<section id="miniworld">
-<h1>Miniworld<a class="headerlink" href="#miniworld" title="Permalink to this heading">#</a></h1>
+<section id="miniworld-is-a-minimalistic-3d-interior-environment-simulator-for-reinforcement-learning-robotics-research">
+<h1>Miniworld is a minimalistic 3D interior environment simulator for reinforcement learning &amp; robotics research<a class="headerlink" href="#miniworld-is-a-minimalistic-3d-interior-environment-simulator-for-reinforcement-learning-robotics-research" title="Permalink to this heading">#</a></h1>
 <figure class="align-default">
 <a class="reference internal image-reference" href="_images/miniworld_homepage.gif"><img alt="Sequence of observations from Collect Health environment" src="_images/miniworld_homepage.gif" style="width: 400px;" /></a>
 </figure>
-<p>MiniWorld is a minimalistic 3D interior environment simulator for reinforcement learning &amp; robotics research that allows environments to be easily edited like Minigrid meets DM Lab. It can simulate environments with rooms, doors, hallways, and various objects (e.g., office and home environments, mazes).</p>
+<p>MiniWorld allows environments to be easily edited like Minigrid meets DM Lab. It can simulate environments with rooms, doors, hallways, and various objects (e.g., office and home environments, mazes).</p>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this heading">#</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">miniworld</span>
+</pre></div>
+</div>
+</section>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this heading">#</a></h2>
 <p>The Gymnasium interface allows to initialize and interact with the Miniworld default environments as follows:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">gymnasium</span> <span class="k">as</span> <span class="nn">gym</span>
 <span class="n">env</span> <span class="o">=</span> <span class="n">gym</span><span class="o">.</span><span class="n">make</span><span class="p">(</span><span class="s2">&quot;MiniWorld-OneRoom-v0&quot;</span><span class="p">)</span>
@@ -333,6 +341,7 @@
 <span class="n">env</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 </div>
+</section>
 </section>
 
           </article>
