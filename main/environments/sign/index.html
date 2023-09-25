@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" data-content_root="../../">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark">
@@ -11,11 +11,11 @@
 <link rel="index" title="Index" href="../../genindex/" /><link rel="search" title="Search" href="../../search/" /><link rel="next" title="ThreeRooms" href="../threerooms/" /><link rel="prev" title="Sidewalk" href="../sidewalk/" />
         <link rel="canonical" href="https://miniworld.farama.org/environments/sign.html" />
 
-    <link rel="shortcut icon" href="../../_static/miniworld-favicon.png"/><!-- Generated with Sphinx 7.1.0 and Furo 2023.05.20.dev1 -->
+    <link rel="shortcut icon" href="../../_static/miniworld-favicon.png"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.08.19.dev1 -->
         <title>Sign - Miniworld Documentation</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=362ab14a" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?digest=2b6f8eb5452c44539a42dd9ada0a48f56e5f404d" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?digest=d98e5db1aa483f10fd0a50bf79700ebb0c5bab79" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=3e7f4c72" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=49cbaffd" />
     
     
 
@@ -287,7 +287,7 @@
           <article role="main">
             
             <section id="sign">
-<h1>Sign<a class="headerlink" href="#sign" title="Permalink to this heading">#</a></h1>
+<h1>Sign<a class="headerlink" href="#sign" title="Link to this heading">#</a></h1>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../../_images/sign.jpg"><img alt="Sign" src="../../_images/sign.jpg" style="width: 300px;" /></a>
 </figure>
@@ -315,7 +315,7 @@
 </table>
 </div>
 <section id="description">
-<h2>Description<a class="headerlink" href="#description" title="Permalink to this heading">#</a></h2>
+<h2>Description<a class="headerlink" href="#description" title="Link to this heading">#</a></h2>
 <p>Sign environment from https://arxiv.org/abs/2008.02790.</p>
 <p>If you use this environment, please cite the above paper (Liu et al., 2020).</p>
 <p>Small U-shaped maze with 6 objects: (blue, red, green) x (key, box).
@@ -328,7 +328,7 @@ the constructor respectively.</p>
 <p>Includes an action to end the episode.</p>
 </section>
 <section id="action-space">
-<h2>Action Space<a class="headerlink" href="#action-space" title="Permalink to this heading">#</a></h2>
+<h2>Action Space<a class="headerlink" href="#action-space" title="Link to this heading">#</a></h2>
 <div class="table-wrapper colwidths-auto docutils container">
 <table class="docutils align-default">
 <thead>
@@ -354,17 +354,17 @@ the constructor respectively.</p>
 </div>
 </section>
 <section id="observation-space">
-<h2>Observation Space<a class="headerlink" href="#observation-space" title="Permalink to this heading">#</a></h2>
+<h2>Observation Space<a class="headerlink" href="#observation-space" title="Link to this heading">#</a></h2>
 <p>The observation space is an <code class="docutils literal notranslate"><span class="pre">ndarray</span></code> with shape <code class="docutils literal notranslate"><span class="pre">(obs_height,</span> <span class="pre">obs_width,</span> <span class="pre">3)</span></code>
 representing a RGB image of what the agents sees.</p>
 </section>
 <section id="rewards">
-<h2>Rewards:<a class="headerlink" href="#rewards" title="Permalink to this heading">#</a></h2>
+<h2>Rewards:<a class="headerlink" href="#rewards" title="Link to this heading">#</a></h2>
 <p>+1 for touching the object where the color matches the sign and the shape matches the goal
 -1 for touching any other object</p>
 </section>
 <section id="arguments">
-<h2>Arguments<a class="headerlink" href="#arguments" title="Permalink to this heading">#</a></h2>
+<h2>Arguments<a class="headerlink" href="#arguments" title="Link to this heading">#</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Sign</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">max_episode_steps</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">color_index</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">goal</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -484,9 +484,9 @@ representing a RGB image of what the agents sees.</p>
     
     
 
-    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js?v=650fba44"></script>
+    <script src="../../_static/documentation_options.js?v=b21b538c"></script>
     <script src="../../_static/doctools.js?v=888ff710"></script>
-    <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/scripts/furo.js?v=7660844c"></script>
     
     <script>
@@ -617,7 +617,7 @@ representing a RGB image of what the agents sees.</p>
             const subSectionContainerElem = Object.assign(
                 document.createElement('div'), {
                   className:'farama-header-menu__subsections-container',
-                  style: key == "Mature Projects" ? "display: flex" : ""
+                  style: 'display: flex'
                 }
             )
             Object.keys(subSections).forEach((subKey, i) => {
@@ -632,7 +632,7 @@ representing a RGB image of what the agents sees.</p>
                   innerText: subKey
                 }
               ))
-              const ulElem = createProjectsList(subSections[subKey], key !== "Foundation");
+              const ulElem = createProjectsList(subSections[subKey], key !== 'Foundation');
               subSectionElem.appendChild(ulElem);
               subSectionContainerElem.appendChild(subSectionElem);
             })
